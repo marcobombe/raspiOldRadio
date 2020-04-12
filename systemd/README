@@ -1,0 +1,2 @@
+* This file will be copied by the install script to /etc/systemd/system/raspiOldRadio.service
+* and this command will be run to activate it: sudo systemctl enable raspiOldRadio.service

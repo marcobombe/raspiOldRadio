@@ -1,0 +1,12 @@
+[Unit]
+Description=RaspiOldRadio Service
+After=syslog.target network.target
+
+[Service]
+#Type=oneshot
+ExecStart=/home/pi/raspiOldRadio/raspiOldRadio.py > /dev/ttyS0
+RestartSec=2s
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
